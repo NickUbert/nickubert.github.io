@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src = "./resume.js"></script> 
+    <title>Nick Ubert</title>
+</head>
+<body>
+    <!-- Go easy on me, I don't have much experience with HTML and threw this together in 3 days.-->
+    <div id="playlistPanel">
+        <div id="playlistNav">
+            <!--image credit to icons8.com-->
+        <div class="listNavItem">
+            <a href="home.html" class="navItem">&nbsp;... </a>
+        </div>
+            <div class="listNavItem">
+                <!--image credit to icons8.com-->
+                <img class="navIcon" src="res/homeIcon.png">
+                <a href="#" onClick="return show('homePageContent');" class="navItem"> Home </a>
+           </div>
+
+           <div class="listNavItem">
+               <!--image credit to icons8.com-->
+            <img class="navIcon" src="res/browseIcon.png">
+            <a href="#" onClick="return show('homePageContent');" class="navItem"> Browse </a>
+           </div>
+
+           <div class="listNavItem">
+               <!--image credit to icons8.com-->
+            <img class="navIcon" src="res/radioIcon.png">
+            <a href="#" onClick="return show('homePageContent');" class="navItem"> Radio </a>
+            </div>
+        </div>
+
+        <div id="playlistScroll">
+            <div class ="playlistItem">
+                <b id="picksLabel"> PERSONAL PICKS</b>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/56ZTgzPBDge0OvCGgMO3OY" target=_blank class="navItem"> Beach House </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/0SwO7SWeDHJijQ3XNS7xEE" target=_blank class="navItem"> MGMT </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/2kGBy2WHvF0VdZyqiVCkDT" target=_blank class="navItem"> Father John Misty </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb" target=_blank class="navItem"> Tame Impala </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM" target=_blank class="navItem"> Frank Ocean </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/6fC2AcsQtd9h4BWELbbire" target=_blank class="navItem"> Peach Pit </a>
+            </div>  
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/1KP6TWI40m7p3QBTU6u2xo" target=_blank class="navItem"> BORNS </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ" target=_blank class="navItem"> Gorillaz </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/6dgwEwnK0YtDfS9XhRwBTG" target=_blank class="navItem"> Broken Bells </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/5BvJzeQpmsdsFp4HGUYUEx" target=_blank class="navItem"> Vampire Weekend </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL" target=_blank class="navItem"> Childish Gambino </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/4yvcSjfu4PC0CYQyLy4wSq" target=_blank class="navItem"> Glass Animals </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/08GQAI4eElDnROBrJRGE0X" target=_blank class="navItem"> Fleetwood Mac </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/6yJ6QQ3Y5l0s0tn7b0arrO" target=_blank class="navItem"> JPEGMAFIA </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/3JsMj0DEzyWc0VDlHuy9Bx" target=_blank class="navItem"> Supertramp </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/3Sz7ZnJQBIHsXLUSo0OQtM" target=_blank class="navItem"> Mac DeMarco </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/77SW9BnxLY8rJ0RciFqkHh" target=_blank class="navItem"> The Neighbourhood </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/3MZsBdqDrRTJihTHQrO6Dq" target=_blank class="navItem"> Joji </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60" target=_blank class="navItem"> Post Malone </a>
+            </div>
+            <div class ="playlistItem">
+                <a href="https://open.spotify.com/artist/2FXC3k01G6Gw61bmprjgqS" target=_blank class="navItem"> Hozier </a>
+            </div>
+        </div>
+        <div id="spacer">
+            <img id="newPlaylistIcon" src="res/newPlaylistIcon.png">
+           <p id="newPlaylist"> New Playlist</p>
+        </div>
+        <div id="currentlyPlaying">
+            <img src="res/howdy.gif" width="100%" height="100%">
+        </div>
+    
+    
+    </div>
+    
+    <div id ="window">
+    <div id="homePageContent">
+        <div id="homeHeader">
+                <table id="tableHeader">
+                    <tbody>
+                    <tr>
+                        <img id="headerPic" src="res/profilePicSquare.jpg">
+                    </tr>
+                    <tr>
+                      <td><p id="epText">RESUME </p></td>
+                    </tr>
+                    <tr>
+                       <td> <h1 id="albumTitle">Howdy Spotify</h1> </td>
+                    </tr>
+                    <tr>
+                      <td>  <p id="byArtist">By</p>
+                        <a href="https://www.linkedin.com/in/nicholas-ubert-5088a1158/" target=_blank id="artistLink"> Nick Ubert </a>
+                    </td>
+                    </tr>
+                    <tr>
+                       <td> <p id="albumInfo">2020 · 5 songs, 4 min</p></td>
+                    </tr>
+                    <tr>
+                        <td> <a href="#" onClick="return show('workPageContent');">
+                            <div id="playButton">
+                           <p id="playText">PLAY</p>
+                        </div>
+                    </a>
+                        <img id="heartPlaylist" src="res/heartPlaylistIcon.png">
+                        <img id="detailsButton" src="res/detailsPlaylistIcon.png">
+                    </td>
+                    </tr>
+                    </tbody>
+            </table>
+        </div>
+        <div id="albumList">
+            <!-- Icons credited to icons8.com-->
+            <div id="albumListHeader">
+                <p class="listItemNum">#</p>
+                <p id="titleHeader">TITLE</p>
+                <img src="res/timeIcon.png" id="timeHeader"> 
+                <img src="res/starIcon.png" id="starHeader"> 
+            </div>
+            <div class="albumListItem">
+                <p class="listItemNum">1</p>   
+                <img src = "res/heartIcon.png" class="albumListHeart">
+                <a class="listTitle" href="#" onClick="return show('workPageContent');">Work History</a>
+                <p class="listItemTime">1:12</p>
+                <img src ="res/thumbsUpIcon.png" class="listItemRating">
+            </div>
+            <div class="albumListItem">
+                <p class="listItemNum">2</p>   
+                <img src = "res/heartIcon.png" class="albumListHeart">
+                <a class="listTitle" href="#" onClick="return show('schoolContent');">Education and Clubs</a>
+                <p class="listItemTime">0:52</p>
+                <img src ="res/thumbsUpIcon.png" class="listItemRating">
+            </div>
+            <div class="albumListItem">
+                <p class="listItemNum">3</p>   
+                <img src = "res/heartIcon.png" class="albumListHeart">
+                <a class="listTitle" href="#" onClick="return show('aboutContent');">About Me</a>
+                <p class="listItemTime">1:20</p>
+                <img src ="res/thumbsUpIcon.png" class="listItemRating">
+            </div>
+            <div class="albumListItem">
+                <p class="listItemNum">4</p>   
+                <img src = "res/heartIcon.png" class="albumListHeart">
+                <a class="listTitle" href="#" onClick="return show('whyApplyContent');">Why I'm Applying</a>
+                <p class="listItemTime">1:30</p>
+                <img src ="res/thumbsUpIcon.png" class="listItemRating">
+            </div>
+            <div class="albumListItem">
+                <p class="listItemNum">5</p>   
+                <img src = "res/heartIcon.png" class="albumListHeart">
+                <a class="listTitle" href="https://www.linkedin.com/in/nicholas-ubert-5088a1158/" target=_blank>LinkedIn</a>
+                <p class="listItemTime">0:05</p>
+                <img src ="res/thumbsUpIcon.png" class="listItemRating">
+            </div>
+            <p id="copyright">® 2020 I don't claim to be a web developer but this an original site.</p>
+
+               
+            
+        </div>
+       
+    </div>
+
+    <div id="workPageContent">
+        <div id="workBody">
+        <p id="headerText" style="border-bottom: none;" >Work History</p>
+        <ul id="infoList">
+            <li>Badger Software:</li>
+            <i>Senior Developer</i>
+            <ul class="innerList">
+                <li>Started the company when I was a senior in high school.</li>
+                <li>In the early days I worked in both marketing and development.</li>
+                <li>Wrote 100% of the code for an industrial grade software.</li>
+                <li>(Frontend GUI, Graphic Designs, Backend Systems, Database Development)</li>
+                <li>Eventually had the software used by Panera, Kwik Trip, and Pizza Ranch.</li>
+                <li>More details available on the 'About Me' page.</li>
+            </ul>
+          
+            <li>Radisson Hotel Group:</li>
+            <i>Front Desk Agent</i>
+            <ul class="innerList">
+                <li>Checked guests in and out of the hotel.</li>
+                <li>Catered to whatever requests a customer had.</li>
+                <li>Managed payment information and did nightly audits of the hotel.</li>
+            </ul>
+                <li>University of Wisconsin-La Crosse:</li>
+                <i>Technology Coordinator-Residence Life</i>
+            <ul class="innerList">
+                <li>Developed an event scheduling software used by students and Residence Life staff.</li>
+                <li>Managed portions of the university's website.</li>
+                <li>Ran several university social media accounts.</li>
+                <li>Left the job early because I finished the software development and automated the rest of my job.</li>
+            </ul>
+
+            <li>Marcus Theaters</li>
+                <i>Usher, Team Lead</i>
+                <ul class="innerList">
+                <li>While working as an usher, I had to coordinate the cleaning of auditoriums with a team.</li>
+                <li>Catered to whatever requests a customer had.</li>
+                <li>Promoted to the role of Team Lead when I was 16 and the theater's youngest employee at the time.</li>
+            </ul>
+        </div>
+        <p id="headerText">Appears On</p>
+        <img src="res/badgerLogo.png" class="workCover">
+        <img src="res/radLogo.png" class="workCover">
+        <img src="res/uwlLogo.png" class="workCover">
+        <img src="res/marcusLogo.png" style="margin-right:20%;" class="workCover">
+   
+        <p class="workTitle">Badger Software</p>
+        <p class="workTitle">Radisson Hotel Group</p>
+        <p class="workTitle">University of Wisconsin-La Crosse</p>
+        <p class="workTitle" style="margin-right: 20%;">Marcus Theaters</p>
+        <p class="workDate">2017-current (3y,3m)</p>
+        <p class="workDate">2019-2020 (1y,1m)</p>
+        <p class="workDate">2018-2019 (8m)</p>
+        <p class="workDate">2016-2017 (11m)</p>
+     </div>
+
+     <div id="schoolContent">
+        <p id="headerText" style="border-bottom: none;">Education</p>
+        <ul id="infoList">
+            <li class="workList">Germantown High School</li>
+            <i class="subTitle"> High School Diploma: 2018</i>
+            <ul class="innerList">
+                <li>Student of the Month Award Oct. 2017. Awarded for independent study work with programming.</li>
+            </ul>
+            </ul>
+            <ul id="infoList">
+                <li class="workList">University of Wisconsin - La Crosse</li>
+                <i class="subTitle">Projected: 2022</i>
+                <ul class="innerList">
+                    <li> In Progress: Bachelor's Degree in Computer Science with a focus on Software Engineering.</li>
+                </ul>
+            </ul>
+          
+        <p id="headerText" style="border-bottom: none;">Clubs</p>
+        <ul id="infoList">
+            <li class="workList">Varsity Tennis</li>
+            <i class="subTitle">Throughout High School</i>
+            <li class="workList">Marching Band</li>
+            <i class="subTitle">Freshman and Sophomore year of High School</i>
+            <li class="workList">Varsity Slalom Ski Racing Team</li>
+            <i class="subTitle">Throughout High School</i>
+            <li class="workList">President of the German Honor Society</li>
+            <i class="subTitle"> Junior Jahr von Hauptschule</i>
+            <li class="workList">Environmental Club</li>
+            <i class="subTitle">Freshman year of college - present</i>
+            <li class="workList">Badminton Club</li>
+            <i class="subTitle">Freshman year of college - present</i>
+            <li class="workList">Founder and Current Vice President of Super Smash Bros. Club in La Crosse</li>
+            <i class="subTitle">Freshman year of college - present</i>
+            <ul class="innerList"><li>Before Covid we had grown to 80+ active members in the club. </li></ul>
+        
+        </ul>
+     </div>
+
+     <div id="aboutContent">
+        <p id="headerText" style="border-bottom: none; margin-top: 0;">About Me</p>
+        <ul id="infoList">
+            <li>Skills and Familiar Systems</li>
+            <ul class="innerList">
+               <li>Java</li>
+               <li>JavaScript</li>
+               <li>SQL</li>
+               <li>Algorithm Design ( My personal fav &lt;3 )</li>
+               <li>Backend Systems</li>
+               <li>AWS</li>
+               <li>DevOps Life Cycles</li>
+
+            </ul>
+            </ul>
+        </ul>      
+        <ul id="infoList">
+            <li>Personal</li>
+            <ul class="innerList">
+                <li>Pushing myself to my limits is extremely satisfying to me and I apply that mindset to every aspect of my life. I avoid half-measures like the plague.</li>
+                <li>I like to stay busy. Since I was in middle school there hasn't been a time where I wasn't studying hard, playing high level sports, running clubs, participating in clubs, working part time, and or running a startup.</li>
+                <li> Call it nerdy but I'm proud of it - I'm ranked as a top 10 player in my region of Wisconsin for competitive Super Smash Bros. </li>
+                <li>If you're familiar with the Meyers Briggs personality test, I fall in the INTJ category. I know it sounds like a horoscope but it's worth mentioning since it is a strikingly accurate description of my personality - minus the "Lone Wolf" aspects.</li>
+                <a id="refLink" target=_blank href="https://www.16personalities.com/intj-careers">Meyers Briggs: INTJ Description.</a>
+            </ul>
+            </ul>
+            <ul id="infoList">
+                <li>Professionally</li>
+                <ul class="innerList">
+                    <li>My passion project has always been my startup company called Badger Software. I started the company after working in a kitchen where I saw a need for a food rotation software that had not yet been invented.</li>
+                    <li>I taught myself Java and created an industrial food safety software called FreshTempo. </li>
+                    <li>Before turning 19 I had negotiated my way into meetings with the highest level of directors in companies like Panera, Kwik Trip, and Pizza Ranch.</li>   
+                    <li>This startup has taught me more than I could ever imagine about the importance of positive failures.</li>
+                    <li>Even though I was unable to land a big client, I am thankful for being prepared for anything that the tech industry has to offer since I have reached such a high level as a solo developer and want to work with teams now.</li>
+                    <a id="refLink" href="https://www.badger.software/products" target=_blank>Badger Software</a>
+                </ul>
+                </ul>
+            </ul>
+           
+     </div>
+
+     <div id="whyApplyContent">
+        <p id="headerText" style="border-bottom: none;">Why I'm Applying</p>
+        <ul id="infoList">
+            <li>I respect Spotify's values more than any other brand. (there's a reason that my only resume is custom tailored for your company).</li>
+            <li>I love collaborating with people who are as passionate about quality code as myself. </li>
+            <li>Great things will happen when a person as motivated and experienced as myself is allowed to work in a fast-paced environment like Spotify's.</li>
+            </ul>
+
+            <i class="subTitle" style="margin-top: 15%;"> Note: To whom it may concern: I apologize for this resume being longer than your average resume. Since my programming history is not as straight forward as an average candidates, I felt like more context was necessary. I appreciate you taking the time to read through this though, thank you. </i>
+     </div> 
+
+  </div>
+</body>
+</html>
