@@ -338,6 +338,11 @@ body{
 /* End Home Page Content */
 
 /*Work page content*/
+.nextLink{
+    color:white;
+    float:right;
+}
+
 
 #workPageContent{
     width:90%;
@@ -351,6 +356,7 @@ body{
 #headerText{
     color:white;
     font-size: x-large;
+    display:inline-block;
     margin-top:0;
     padding-bottom: 5px;
     border-bottom:1px solid #282828;
