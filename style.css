@@ -338,14 +338,15 @@ body{
 /* End Home Page Content */
 
 /*Work page content*/
+
 .nextLink{
     color:white;
     float:right;
+    padding-right: 5%;
 }
 
-
 #workPageContent{
-    width:80%;
+    width:90%;
     height:90%;
     margin-left: 10%;  
     position: absolute;
@@ -410,7 +411,7 @@ i{
 
 /*Every other page content */
 #schoolContent{
-    width:80%;
+    width:90%;
     height:90%;
     margin-left: 10%;  
     position: absolute;
@@ -420,7 +421,7 @@ i{
 }
 
 #aboutContent{
-    width:80%;
+    width:90%;
     height:90%;
     margin-left: 10%;  
     position: absolute;
@@ -441,7 +442,7 @@ i{
 }
 
 #whyApplyContent{
-    width:80%;
+    width:90%;
     height:90%;
     margin-left: 10%;  
     position: absolute;
@@ -449,5 +450,7 @@ i{
     overflow: auto;
     display: none;  
 }
+
+
 
 
