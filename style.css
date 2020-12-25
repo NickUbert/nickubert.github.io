@@ -137,16 +137,16 @@ body{
     margin-left: 7%;  
     position: absolute;
     bottom:0;     
- 
 }
 /* Home header */
 #homeHeader{
     width: 100%;
     height: 28%;
     position: absolute;
+    padding-bottom: 15px;
 }
 #headerPic{
-    height:90%;
+    height:100%;
     width:auto;
     margin:0;
     float: left;
